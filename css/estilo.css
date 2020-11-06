@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+body, html{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	color: #666666;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.logo{
+	width: 14%;
+	float: left;
+	margin: 1%;
+}
+nav{
+	width: 70%;
+	float: right;
+	text-align: right;
+	margin-right: 5%;
+}
+nav a{
+	color: #333333;
+	text-decoration: none;
+	padding: 0 2% 0;
+	display: inline-block;
+	border-top: 3px solid transparent;
+	border-left: 3px solid transparent;
+	margin-top: 5%;
+	transition: 0.3s;	
+}
+nav a:hover{
+	border-color: #f75701;
+	color: #f75701;
+}
+header{
+	width: 100%;
+	clear: both;
+	padding-top: 1.6%;
+}
+.slide{
+	width: 90%;
+	margin: auto;
+}
+.slide img{
+	width: 100%;
+}
+.corpo{
+	width: 100%;
+	min-height: 50%;
+	clear: both;
+	display: block;
+	position: relative;
+}
+footer{
+	width: 100%;
+	height: 80%;
+	clear: both;
+}
+footer article{
+	width: 50%;
+	float: left;
+	padding: 1%;
+	height: 80%;
+	margin-bottom: 5%;
+}
+.form{
+	width: 100%;
+}
+.field{
+	width: 100%;
+	padding: 3%;
+	margin: 0.3%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.button{
+	width: 40%;
+	margin: 0.3%;
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 3%;
+	border: none;
+}
+.rodape{
+	text-align: center;
+	background-color: #f75701;
+	clear: both;
+	color: #FFFFFF;
+	padding: 1.6%;
+}
+.menu{
+	text-align: right;
+	margin-right: 5%;
+}
+.menu a{
+	color: #666666;
+	display: inline-block;
+	padding: 1%;
+	text-decoration: none;
+}
+.menu a:hover{
+	color: #f75701;
+	text-decoration: overline;
+}
+.linhas tr:nth-child(odd) {
+  background-color: #DDDDDD;
+}
+.linhas tr:nth-child(even) {
+  background-color: #EEEEEE;
+}
+.linhas tr:first-child {
+  background-color: #FFFFFF;
+}
+.produto{
+	width: 23%;
+	height: 350px;
+	float: left;
+	text-align: center;
+	border: 1px solid #EEEEEE;
+	margin: 1%;
+	padding: 2%;
+	box-sizing: border-box;
+}
+.produto a{
+	color: #666666;
+	text-decoration: none;
+}
+.capa, .descri{
+	float: left;
+	margin: 5%;
+	width: 40%;
+}
+.capa{
+	text-align: right;
+}
+.capa img{
+	width: 300px;
+}
+
+
+
+
+
+
