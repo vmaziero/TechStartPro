@@ -22,6 +22,7 @@
                             <th>Descrição</th>
                             <th>Valor</th>
                             <th>Categorias</th>
+                            <th>Editar</th>
                             <th>Apagar</th>
                         </tr>";
 
@@ -37,11 +38,16 @@
                         }
                         echo "</td>";
 
+                        echo "<td><form method='post' action='formEditaProduto.php' class='form' style='width:30%;'>
+                                <input type='hidden' value='$row[id]' name='id' id='id'>
+                                <input type='submit' value='Editar produto' class='button'>
+                            </form></td>";
+                        
                         echo "<td><form method='post' action='excluiProduto.php' class='form' style='width:30%;'>
                                 <input type='hidden' value='$row[id]' name='id' id='id'>
                                 <input type='submit' value='Excluir produto' class='button'>
                             </form></td>";
-                        echo "</tr>";	
+                        echo "</tr>";
                     }
                     echo "</table>";
 
