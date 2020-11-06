@@ -9,29 +9,44 @@
 <body>
     
 	<center>
+        
+        <button class="button"><a href="formInsereProduto.php">Inserir novo produto</a></button>
+        <h3>Filtros</h3>
+        <h4>Para filtrar produtos por múltiplas categorias, pressione a tecla Ctrl e clique nas opções desejadas.</h4>
         <form method="post" action="listaProdutos.php" class="form" style="width:30%;">
-			<input type='hidden'  name='id' id='id'>
-			<input type="text" name="name" class="field">
-			<input type="textarea" rows="4" cols="20" name="description" class="field">
-			<input type="number" step="any" name="value" class="field">
-			<select name="category[]" id="category" multiple>
-				<option value="" disabled selected>Categorias</option>
-                <?php
-                     //Connection
-					include_once("./conecta.php");
+        <table>
+			<tr>
+				<th></th>
+				<th>Nome</th>
+				<th>Descrição</th>
+				<th>Valor</th>
+				<th>Categorias</th>
+			</tr>
+			<tr>
+                <td><input type='hidden'  name='id' id='id'></td>
+                <td><input type="text" name="name" class="field"></td>
+                <td><input type="textarea" rows="4" cols="20" name="description" class="field"></td>
+                <td><input type="number" step="any" name="value" class="field"></td>
+                <td><select name="category[]" id="category" multiple>
+                    <option value="" disabled selected>Categorias</option>
+                    <?php
+                        //Connection
+                        include_once("./conecta.php");
 
-					//Get all categories from database
-					$data=mysqli_query($connection, "SELECT * FROM category");
-					//Separando os dados com Array
-					
-					while($row=$data->fetch_array()){
-						echo "<option value='$row[id]'>$row[name]</option>";	
-					}
-					
-				?>
-			</select>
+                        //Get all categories from database
+                        $data=mysqli_query($connection, "SELECT * FROM category");
+                        //Separando os dados com Array
+                        
+                        while($row=$data->fetch_array()){
+                            echo "<option value='$row[id]'>$row[name]</option>";	
+                        }
+                        
+                    ?>
+                </select></td>
 
-			<input type="submit" value="Pesquisar" class="button">
+                <td><input type="submit" value="Pesquisar" class="button"></td>
+            </tr>
+        </table>
 		</form>
 		<h3>Listagem de produtos</h3>
         <?php
