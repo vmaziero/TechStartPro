@@ -1,100 +1,48 @@
+# Projeto TechTest | Olist 
 
-# Trabalho no olist
-Olist é uma empresa que oferece uma plataforma de integração para vendedores e marketplaces, permitindo-lhes vender seus produtos em vários canais.
+## Conteúdos
 
-A equipe de desenvolvimento Olist consiste em desenvolvedores que amam o que fazem. Nossos processos de desenvolvimento ágil e nossa busca pelas melhores práticas de desenvolvimento proporcionam um ótimo ambiente para profissionais que gostam de criar softwares de qualidade em boa companhia.
+* [Sobre o projeto](#sobre-o-projeto)
+  * [Onde encontrar](#onde-encontrar)
+  * [Tecnologias usadas](#tecnologias-usadas)
+* [Contato](#contato)
 
-Estamos sempre à procura de bons programadores que adorem melhorar seu trabalho. 
+## Sobre o projeto
 
-Este repositório contém um problema usado para avaliar as habilidades do candidato. É importante notar que resolver satisfatoriamente o problema é apenas uma parte do que será avaliado. Também consideramos outras disciplinas de programação como documentação, teste, cronograma de commit, design e melhores práticas de codificação.
-
-
-# Dicas:
-
-* Leia atentamente a especificação para entender todos os requisitos do problema e do artefato antes de começar, se você não entender algo, diga-nos;
-* Verifique as recomendações e o material de referência no final desta especificação;
-* Apreciamos a simplicidade, portanto, crie uma boa configuração de projeto que nos ajudará na sua avaliação;
-* Por favor, faça testes ... nós apreciamos testes <3 ... testes tornam o mundo melhor.
-
-# Como participar
-* Faça um fork deste repositório no Github. Se você não pode criar um fork público deste projeto, faça um repositório privado e adicione permissão de leitura para o usuário abaixo:
-  + mgranemann
-* Siga as instruções do README.md (este arquivo);
-* Candidate-se ao cargo na nossa página de carreiras com o link para o fork no Github.
-  + caso ja tenha realizado a candidatura na pagina de carreiras sem o envio do desafio, responda ao e-mail que lhe foi enviado pela equipe do seleção com o link do seu repositório.
+- O projeto compreende uma aplicação de cadastro de produtos via web com a possibilidade de
+envio de arquivo CSV para a inclusão de categorias de produtos na base de dados.
+- Para incluir um produto na base de dados, basta preencher todos os campos solicitados, podendo
+selecionar mais de uma categoria para este pressionando a tecla CTRL e selecionando as 
+categorias desejadas.
+- Pode-se filtrar os produtos por meio de uma pesquisa de nome (ou partes dele), descrição (ou partes
+dela), valor completo ou categoria(s).
+- Ao editar os dados, pode-se atualizar todos os campos. Porém, é necessário selecionar as categorias
+do produto novamente, mesmo que permaneçam idênticas.
+- A exclusão do produto pode ser realizada na própria listagem e deve ser utilizada somente
+em casos certos, não havendo necessidade de confirmação de intenção de exclusão.
 
 
 
-# Especificação
-Você deve implementar um aplicativo para armazenar dados de produtos e categorias.
+### Onde encontrar
 
-1. Receba um CSV com as categorias e importe para o banco de dados
+https://github.com/vmaziero/TechStartPro
 
-  Dado um arquivo CSV com muitas categorias, você precisa construir um comando para importar os dados para o banco de dados. O arquivo CSV terá o seguinte formato:
+### Tecnologias usadas
 
-> nome
-> * Móveis
-> * Decoração
-> * Celular 
-> * Informática
-> * Brinquedos
-
-Cada registro de categoria no banco de dados deve ter os seguintes campos:
-* id (autogerado)
-* nome
-
-Você precisa armazenar os dados das categorias para complementar os dados do produto que serão armazenados posteriormente (consulte o item # 2).
+- Banco de dados MySQL e gerenciador MySQL Workbench
+- Apache server
+- PHP
+- SQL
+- HTML/CSS
+- Editor de código Visual Studio Code
+- Sistema operacional Windows 10 Pro
 
 
-2. CRUD (criar, ler, atualizar e excluir) de produtos:
+#### Mensagem de commit
+As mensagens de _commit_ devem ser concisas e seguir o seguinte padrão:
+- Língua: pt-br
+- Formato: frase curta que explica a motivação do commit, iniciada com um verbo no imperativo.
 
-Você precisa implementar estas ações:
-* Criar um produto
-* Ler os dados do produto
-* Atualizar os dados do produto
-* Excluir os dados do produto
+## Autora
 
-Cada registro de produto possui os campos:
-* id (autogerado)
-* nome
-* descrição
-* valor
-* categorias (um produto pode estar em mais de uma categoria)
-
-Para recuperar um produto, podemos filtrar por 4 campos (ou uma composição desses quatro):
-* nome
-* descrição
-* valor
-* categorias
-Deve ser possível navegar pelos dados de todos os produtos sem nenhum filtro.
-
-Para criar um produto, será necessário informar os dados abaixo:
-* "nome": // Nome do produto;
-* “descrição”: // Descrição do produto
-* “valor”:// Valor do produto
-* “categorias”:// Lista de ids de categorias
-
-
-# Requisitos do projeto:
-1. Pode ser feita em qualquer linguagem de programação que suporte o paradigma de orientação a objetos
-2. Utilizar padrões de projeto
-3. Boas práticas de desenvolvimento de software
-4. Utilizar paradigma de orientação a objetos
-5. Utilizar GitHub
-6. Camada visual pode ser console, desktop ou web
-7. Variáveis, código e strings devem estar todos em inglês.
-8. Escreva a documentação do projeto contendo:
-
->  * Descrição;
->  * Instruções de instalação (configuração) e teste;
->  * Breve descrição do ambiente de trabalho utilizado para executar este projeto (Computador / sistema operacional, editor de texto / IDE, bibliotecas, etc).
->  * Variáveis, código e strings devem estar todos em inglês.
-  
-# Recomendações
-  * Escreva testes! Por favor, faça testes ... nós apreciamos testes <3 ... testes tornam o mundo melhor;
-  * Use boas práticas de programação;
-  * Use as melhores práticas do git, com mensagens claras;
-  * Esteja ciente ao modelar o banco de dados;
-
-# Divirta-se!
-
+Victória Maziero - [@github](https://github.com/vmaziero) 
