@@ -21,7 +21,7 @@
 		mysqli_query($connection, $query);
 	}
 
-	header("location: formExcluiProduto.php");
+	header("location: listaProduto.php");
 ?>
 
 

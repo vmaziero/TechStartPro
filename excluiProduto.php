@@ -13,7 +13,7 @@
 	$query="DELETE FROM product WHERE id=$recId";
 	mysqli_query($connection, $query);
 
-	header("location: formExcluiProduto.php");
+	header("location: listaProduto.php");
 ?>
 
 
